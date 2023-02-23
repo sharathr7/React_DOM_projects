@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id="root" style="background-color: rgba(233, 109, 109, 0.799);width: 100vw;height: 100vh;"></div>
+
+    <script>
+        const heading = React.createElement("h1",{},"The Evolution of Airbnb's Frontend");
+        const nam = React.createElement("h4",{},"@spikebrehm");
+        const tag = React.createElement("p",{},"airbnb");
+
+        const page = React.createElement("div",{style:{display:"flex",flexDirection:"column",padding:"150px",justifyContent:"center",alignItems:"center",color:"white"}},[heading,nam,tag,]);
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+
+        root.render(page);
+
+    </script>
+</body>
+</html>

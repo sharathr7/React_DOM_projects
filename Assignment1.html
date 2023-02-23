@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div style="padding: 30px;" id="root">
+    </div>
+
+    <script>
+        const header = React.createElement("h1",{},"About Us");
+        const para = React.createElement("p",{},"The English Wikipedia is, with the Simple English Wikipedia, one of two English-language editions of Wikipedia, an online encyclopedia.")
+        const para2 = React.createElement("p",{},"The edition's one-billionth edit was made on 13 January 2021 by Ser Amantio di Nicolao (Steven Pruitt) who as of that date is the user with the highest number of edits on the English Wikipedia, at over four million.[4] Currently, there are 6,618,801 articles created with 896,421 files. The English Wikipedia currently has 45,026,198 registered accounts of which 910 are administrators.The edition's one-billionth edit was made on 13 January 2021 by Ser Amantio di Nicolao (Steven Pruitt) who as of that date is the user with the highest number of edits on the English Wikipedia, at over four million.[4] Currently, there are 6,618,801 articles created with 896,421 files. The English Wikipedia currently has 45,026,198 registered accounts of which 910 are administrators.The edition's one-billionth edit was made on 13 January 2021 by Ser Amantio di Nicolao (Steven Pruitt) who as of that date is the user with the highest number of edits on the English Wikipedia, at over four million.[4] Currently, there are 6,618,801 articles created with 896,421 files. The English Wikipedia currently has 45,026,198 registered accounts of which 910 are administrators.")
+
+        const page = React.createElement("div",{style:{display:"flex",alignItems: "center",justifyContent: "center",flexDirection: "column"}},[header,para,para2]);
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(page);
+    </script>
+</body>
+</html>
